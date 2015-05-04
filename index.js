@@ -1,28 +1,3 @@
-var program = require('commander');
-
-program
-  .version('0.0.1')
-  .description('A tool to encrypt and decrypt using Caesar and Vigenere ciphers')
-  .option('-e, --encode', 'Encrypt text')
-  .option('-d, --decode', 'Decrypt text')
-  .option('-c, --caesar', 'Use a Caesar cipher')
-  .option('-v, --vigenere', 'Use a Vigenere cipher')
-  .parse(process.argv);
-
-if (program.encode && program.caesar) {
-  encrypt(program.args[0], program.args[1], "caesar");
-} else if (program.encode && program.vigenere) {
-  encrypt(program.args[0], program.args[1], "vigenere");
-} else if (program.decode && program.caesar) {
-  decrypt(program.args[0], program.args[1], "caesar");
-} else if (program.decode && program.vigenere) {
-  decrypt(program.args[0], program.args[1], "vigenere");
-}
-
-console.log(program.args);
-
-
-
 function vigEncrypt(text, key) {
   var result = "";
   for (var i = 0, j = 0; i < text.length; i++) {

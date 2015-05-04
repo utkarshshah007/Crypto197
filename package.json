@@ -1,6 +1,6 @@
 {
   "name": "crypto197shahutk",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A small library providing utility methods to encrypt and decrypt messages according to various encryption standards",
   "main": "index.js",
   "scripts": {
@@ -15,12 +15,16 @@
     "cis197"
   ],
   "author": "Utkarsh Shah <shahutk@seas.upenn.edu>",
-  "license": "BSD-2-Clause",
+  "license": "MIT",
   "dependencies": {
     "commander": "2.5.1"
   },
   "bugs": {
     "url": "https://github.com/utkarshshah007/Crypto197/issues"
   },
-  "homepage": "https://github.com/utkarshshah007/Crypto197"
+  "homepage": "https://github.com/utkarshshah007/Crypto197",
+  "preferGlobal": true,
+  "bin": {
+    "crypto197shahutk": "./cli.js"
+  }
 }
