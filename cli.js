@@ -4,9 +4,10 @@ var crypto = require('../crypto197shahutk');
 var program = require('commander'); 
 
 program._name = "crypto197shahutk";
+program._usage = '-e/d -c/v [text...] [key/shift]';
 
 program
-  .version('0.0.1')
+  .version('0.1.0')
   .description('A tool to encrypt and decrypt using Caesar and Vigenere ciphers')
   .option('-e, --encode', 'Encrypt text')
   .option('-d, --decode', 'Decrypt text')
