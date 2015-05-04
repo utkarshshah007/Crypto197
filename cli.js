@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var crypto = require('../crypto197shahutk');
 var program = require('commander'); 
 
