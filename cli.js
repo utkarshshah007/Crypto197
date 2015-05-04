@@ -1,4 +1,4 @@
-var crypto = require('./index');
+var crypto = require('../crypto197shahutk');
 var program = require('commander'); 
 
 program._name = "crypto197shahutk";
@@ -33,13 +33,13 @@ var key = program.args.pop();
 var output = 'Nothing Happened';
 
 if (program.encode && program.caesar) {
-  output = crypto.encrypt(text, key, "caesar");
+  output = crypto.encode(text, key, "caesar");
 } else if (program.encode && program.vigenere) {
-  output = crypto.encrypt(text, key, "vigenere");
+  output = crypto.encode(text, key, "vigenere");
 } else if (program.decode && program.caesar) {
-  output = crypto.decrypt(text, key, "caesar");
+  output = crypto.decode(text, key, "caesar");
 } else if (program.decode && program.vigenere) {
-  output = crypto.decrypt(text, key, "vigenere");
+  output = crypto.decode(text, key, "vigenere");
 }
 
 console.log(output);
