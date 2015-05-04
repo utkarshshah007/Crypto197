@@ -16,7 +16,7 @@ Options:
   -e, --encode				 Encrypt text
   -d, --decode 				 Decrypt text
   -c, --caesar 				 Use a Caesar cipher
-  -v, --vigenere'    		 Use a Vigenere cipher
+  -v, --vigenere    		 Use a Vigenere cipher
 ```
 ## About
 
