@@ -20,17 +20,17 @@ if (!(program.encode || program.decode)) {
 }
 
 if (!(program.caesar || program.vigenere)) {
-  console.log("must specify a program type");
+  console.log("must specify a encryption type");
   process.exit();
 }
 
 if (program.args.length != 2) {
-  console.log("not enough arguments - must have text and key");
+  console.log("Incorrect number of arguments - must have text and key");
   process.exit();
 }
 
-var text = program.args.pop();
-var key = program.args.pop();
+var text = program.args[0];
+var key = program.args[1];
 
 var output = 'Nothing Happened';
 
