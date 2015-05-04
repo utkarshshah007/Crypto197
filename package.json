@@ -1,7 +1,7 @@
 {
   "name": "crypto197shahutk",
-  "version": "1.1.4",
-  "description": "A small library providing utility methods to encrypt and decrypt messages according to various encryption standards",
+  "version": "1.1.5",
+  "description": "A small library that lets you encode/decode secret messages",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

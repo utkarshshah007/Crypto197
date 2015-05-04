@@ -24,7 +24,7 @@ if (!(program.caesar || program.vigenere)) {
   process.exit();
 }
 
-if (program.args.length < 2) {
+if (program.args.length != 2) {
   console.log("not enough arguments - must have text and key");
   process.exit();
 }
